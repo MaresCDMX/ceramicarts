@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="icon"
+      href="https://www.ceramicarts.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Ceramic Arts</title>
+    <!-- Bootrstap CSS v5.0.2-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/cerulean/bootstrap.min.css"
+      integrity="sha512-1rXsIsq9uaj3bxRth2+Mw1slRDxuPzGlfJ8PaLmkO3/OtvCL7jVQrdxaC1VvCmCzKRMdKu0pmbCtqQz/3/xORA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="../assets/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="../assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="../assets/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+
+  <body class="bg-content">
+    <div id="container">
+      <div id="content">
+        <div id="my_account">
+
+          
+
+          <header class="d-flex navbar navbar-expand-lg align-items-center justify-content-center justify-content-md-between border-bottom navbar-light bg-light" id="header">
+            <div class="col-md-3 mb-2 mb-md-0">
+            <img id="logo" src="./../assets/logo-ceramicarts.png" alt="Ceramic Arts"
+              />
+                </a>
+            </div>
+
+            <h1 class="sub-head">
+                <span class="fw-normal fs-1 title" id='title'>Customer Portal</span>
+            </h1>
+
+            <form class="d-flex m-4">
+                <fieldset class="input">
+                    <a href="https://dev.ceramicarts.com/" class="btn btn-success rounded-pill px-3" type="button" value="Back to Website">Back to Website</a>
+                    <h5 class="sub-head mt-2">
+                        <p class="text-success"> <?php echo $custName; ?> </p>
+                    </h5>
+                </fieldset>
+
+                </ul>
+            </form>
+        </header>
+        
+            
+          
+          <div class="w-100">
+            
+
+            
+            <nav class="navbar navbar-dark bg-content-menu">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  
+                    <div class="">
+                      <nav class="nav nav-tabs list  " id="myTab" role="tablist">
+                      
+                        <a
+                          class="nav-item nav-link pointer active"
+                          data-bs-toggle="tab"
+                          data-bs-target="#tab1"
+                          role="tab"
+                          aria-controls="public"
+                          aria-selected="true"
+                          >My Information</a
+                        >
+                        
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab2"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Orders</a
+                        >
+                        
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab3"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Orders Ready</a
+                        >
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab10"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Claims</a
+                        >
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab4"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Invoice History</a
+                        >
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab5"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Item Purchase History</a
+                        >
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab6"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Aged Account Summary</a
+                        >
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab7"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Favourites</a
+                        >
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab8"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Wishlists</a
+                        >
+                        <a
+                          class="nav-item nav-link pointer"
+                          data-bs-target="#tab9"
+                          role="tab"
+                          data-bs-toggle="tab"
+                          >Order Templates</a
+                        >
+                      </nav>
+                    </div>
+                  
+                </div>
+              </div>
+            </nav>
+
+            
+
+            
+            <div class="tab-content p-3" id="myTabContent">
+              <div
+                role="tabpanel"
+                class="tab-pane fade active show mt-2"
+                id="tab1"
+                aria-labelledby="public-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <form>
+                              <fieldset>
+                                <legend class="text-primary">
+                                  My Information
+                                </legend>
+
+                                <div class="form-group">
+                                  <label
+                                    for="exampleInputEmail1"
+                                    class="form-label mt-4 text-primary"
+                                    >Name</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control form-control-plaintext"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="Otto Smith"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label
+                                    for="exampleInputPassword1"
+                                    class="form-label mt-4 text-primary"
+                                    >Address</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control form-control-plaintext"
+                                    id="exampleInputPassword1"
+                                    placeholder="Baldwin Park, CA."
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label
+                                    for="exampleInputPassword1"
+                                    class="form-label mt-4 text-primary"
+                                    >Email</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control form-control-plaintext"
+                                    id="exampleInputPassword1"
+                                    placeholder="otto@aol.com"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label
+                                    for="exampleInputEmail1"
+                                    class="form-label mt-4 text-primary"
+                                    >Phone</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control form-control-plaintext"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp"
+                                    placeholder="55-5555-555"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label
+                                    for="exampleInputPassword1"
+                                    class="form-label mt-4 text-primary"
+                                    >City</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control form-control-plaintext"
+                                    id="exampleInputPassword1"
+                                    placeholder="Miami"
+                                  />
+                                </div>
+                                <div class="form-group">
+                                  <label
+                                    for="exampleInputPassword1"
+                                    class="form-label mt-4 text-primary"
+                                    >Age</label
+                                  >
+                                  <input
+                                    type="text"
+                                    class="form-control form-control-plaintext"
+                                    id="exampleInputPassword1"
+                                    placeholder="34"
+                                  />
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab2"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">102</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">113</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">119</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">120</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">121</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab3"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">102</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">113</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">119</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">120</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">121</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab4"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">102</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">113</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">119</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">120</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">121</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab5"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">102</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">113</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">119</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">120</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">121</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab6"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">102</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">113</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">119</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">120</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">121</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab7"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td class="table-secondary">
+                                      <img
+                                        style="
+                                          width: 50%;
+                                          min-width: 50px;
+                                          min-height: 50px;
+                                          height: auto;
+                                        "
+                                        src="https://picsum.photos/200/300"
+                                      />
+                                    </td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab8"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td class="table-secondary">
+                                      <img
+                                        style="
+                                          width: 50%;
+                                          min-width: 50px;
+                                          min-height: 50px;
+                                          height: auto;
+                                        "
+                                        src="https://picsum.photos/200/300"
+                                      />
+                                    </td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab9"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">102</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">113</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">119</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">120</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">121</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab10"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                <div id="child_template">
+                  <div class="text-white">
+                    <div class="row py-5">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="card rounded shadow border-0">
+                          <div class="card-body p-5 bg-white rounded">
+                            <div class="table-responsive-lg mb-5">
+                              <table class="table table-hover table-striped">
+                                <thead>
+                                  <tr class="table-warning">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Order</th>
+                                    <th scope="col">Client</th>
+                                    <th scope="col">Porducts</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Phone</th>
+                                    <th scope="col">City</th>
+                                    <th scope="col">Street</th>
+                                    <th scope="col">Birthday</th>
+                                    <th scope="col">Age</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">102</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">113</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">119</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">120</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">121</th>
+                                    <td class="table-secondary">Mark</td>
+                                    <td class="table-secondary">Otto</td>
+                                    <td class="table-secondary">Smith</td>
+                                    <td class="table-secondary">
+                                      mark@gmail.dot
+                                    </td>
+                                    <td class="table-secondary">55-5555-555</td>
+                                    <td class="table-secondary">Miami</td>
+                                    <td class="table-secondary">Hudson</td>
+                                    <td class="table-secondary">09/03/1967</td>
+                                    <td class="table-secondary">56</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+               
+              <div
+                class="tab-pane fade mt-2"
+                id="tab11"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                This is the content of Tab 11...
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab12"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                This is the content of Tab 12...
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab13"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                This is the content of Tab 13...
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab14"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                This is the content of Tab 14...
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab15"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                This is the content of Tab 15...
+              </div>
+              <div
+                class="tab-pane fade mt-2"
+                id="tab16"
+                role="tabpanel"
+                aria-labelledby="group-dropdown2-tab"
+              >
+                This is the content of Tab 16...
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/move-js/move.js"></script>
+    <!--<link href="../assets/dist/scrollable-tabs.min.css" rel="stylesheet" />
+    <script src="../assets/dist/scrollable-tabs.min.js"></script>-->
+    <script> 
+      
+          
+      </script>
+      <script>
+        $(function() {
+            $('.back-to-website').on('click', function() {
+                $.ajax({
+                    url: '<?php echo Config::ENDPOINT_URL; ?>',
+                    type: "POST",
+                    data: JSON.stringify('<?php echo $customerSessionJson; ?>'),
+                    cache: false,
+                    success: function() {
+                        window.location.href = '<?php echo Config::REDIRECT_URL; ?>'
+                    }
+                });
+            });
+
+        
+        let menuColumn = document.getElementById('header');
+        let toggle = document.getElementById('navbarSupportedContent');
+        let title = document.getElementById('title');
+        let logo = document.getElementById('logo');
+        
+        if (screen.width > 800) {
+          console.log(screen.width);
+          menuColumn.classList.remove('flex-column');
+          menuColumn.classList.add('d-flex');
+          toggle.classList.add('show');
+          title.classList.remove('title');
+          title.classList.add('fw-normal');
+          title.classList.add('fs-1');
+          logo.style.width = '100%';
+         
+        }
+        else if (screen.width <= 800) 
+        {
+          console.log(screen.width);
+          menuColumn.classList.remove('d-flex');
+          menuColumn.classList.add('flex-column');
+          toggle.classList.remove('show');
+          title.classList.add('title');
+          title.classList.remove('fw-normal');
+          title.classList.remove('fs-1');
+          logo.style.width = '90%';
+          //esconder menú on click bootstrap
+        $('.nav-tabs>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+        }
+        $(window).resize(function() {
+          console.log('La pantalla ha cambiado de tamaño');
+          if (screen.width > 800) {
+            console.log(screen.width);
+            menuColumn.classList.remove('flex-column');
+            menuColumn.classList.add('d-flex');
+            toggle.classList.add('show');
+            title.classList.remove('title');
+            title.classList.add('fw-normal');
+            title.classList.add('fs-1');
+            logo.style.width = '100%';
+           
+          }
+          else if (screen.width <= 800) 
+          {
+            console.log(screen.width);
+            menuColumn.classList.remove('d-flex');
+            menuColumn.classList.add('flex-column');
+            toggle.classList.remove('show');
+            title.classList.add('title');
+            title.classList.remove('fw-normal');
+            title.classList.remove('fs-1');
+            logo.style.width = '90%';
+            //esconder menú on click bootstrap
+        $('.nav-tabs>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+          }
+        });
+
+
+        $( window ).on( "resize", function() {
+          console.log('La pantalla ha cambiado de tamaño');
+          if (screen.width > 800) {
+            console.log(screen.width);
+            menuColumn.classList.remove('flex-column');
+            menuColumn.classList.add('d-flex');
+            toggle.classList.add('show');
+            title.classList.remove('title');
+            title.classList.add('fw-normal');
+            title.classList.add('fs-1');
+            logo.style.width = '100%';
+           
+          }
+          else if (screen.width <= 800) 
+          {
+            console.log(screen.width);
+            menuColumn.classList.remove('d-flex');
+            menuColumn.classList.add('flex-column');
+            toggle.classList.remove('show');
+            title.classList.add('title');
+            title.classList.remove('fw-normal');
+            title.classList.remove('fs-1');
+            logo.style.width = '90%';
+            //esconder menú on click bootstrap
+        $('.nav-tabs>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
+          }
+        } );
+
+
+
+        
+	
+
+
+        });
+    </script>
+  </body>
+</html>
+
